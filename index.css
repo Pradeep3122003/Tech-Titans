@@ -251,6 +251,12 @@ a:hover {
     padding-bottom: 15%;
 }
 
+#page5 #t1{
+    background-image:url("iit.png");
+    background-size:100% 100%;
+    background-align:center;
+}
+
     #page6{
         display: flex;
 align-items: center;
