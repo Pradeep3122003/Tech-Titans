@@ -42,6 +42,10 @@ body{
     font-size: 1.3em;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.menu button a{
+    text-decoration:none;
+    color:black;
+}
 #l{
     margin-left: 80%;
 }
