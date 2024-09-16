@@ -242,6 +242,20 @@ a:hover {
         font-size: 3em;
         margin-bottom: 5%;
     }
+.t {
+    height: 150%;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Trusted {
+    height: 150%;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-bottom: 15%;
+}
 
     #page6{
         display: flex;
