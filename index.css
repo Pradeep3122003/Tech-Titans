@@ -194,13 +194,38 @@ a:hover {
         text-align: center;
     }
 
+   
     .s:hover{
         .sb{
-            height: 100%;
+            height: 60%;
             transition: 0.6s;
         }
         
     }
+
+#sb1{
+     background-image: url("aaryanreview.png");
+        background-size: 100% 100%;
+        background-position: center;
+}
+
+#sb2{
+     background-image: url("pradeepreview.png");
+        background-size: 100% 100%;
+        background-position: center;
+}
+
+#sb3{
+     background-image: url("abhireview.png");
+        background-size: 100% 100%;
+        background-position: center;
+}
+
+#sb4{
+     background-image: url("sagarreview.png");
+        background-size: 100% 100%;
+        background-position: center;
+}
 
 
     /* page 5 trusted organisations */
