@@ -284,13 +284,29 @@ margin: 0 auto;
         width: 20%;
         box-shadow: 0px 0px 10px 1px black;
         margin: 0 auto;
+         background-size:100% 100%;
+    background-align:center;
     }
+
+#page6 #p1{
+     background-image:url("silverpayment.png");
+}
+
+#page6 #p2{
+     background-image:url("goldpayment.png");
+}
+
+#page6 #p3{
+     background-image:url("diamondpayment.png");
+}
 
     #page6 .p:hover{
         cursor: pointer;
         margin-top: -3%;
         transition: 0.6s;
     }
+
+
 
     /* footer desc */
     footer{
