@@ -1,0 +1,248 @@
+*{
+    padding: 0px;
+    margin: 0px 0px;
+    border: none;
+z-index: 1;
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    background-image: linear-gradient(90deg,#F8F3F2,#B8ECFF);
+}
+
+.menu{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(243, 241, 241);
+    box-shadow: 0px 0px 10px 1px black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.menu .logo{
+    height: 80%;
+    width: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px black;
+    margin-left: 1%;
+    background-image: url("logo.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        cursor: pointer;
+}
+
+.menu button{
+    height: 55%;
+    width: 6%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 2px 0px black;
+    margin-left: 1%;
+    font-size: 1.3em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#l{
+    margin-left: 80%;
+}
+
+.menu button:hover {
+    box-shadow: 1px 1px 2px 0px black;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+section{
+    width: 100svw;
+    height: 100svh;
+}
+
+/* page 1 designs */
+#page1{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#img1{
+width: 80svw;
+height: 80svh;
+ background-image: url('sec1i1.png');
+background-size: 100% 100%;
+background-position: center;
+border-radius: 20px;
+margin-top: 5%;
+
+}
+
+#img1 p{
+    width: 6ch;
+   text-align: center;
+    font-size: 8em;
+    color: transparent;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    margin-left: 50%;
+    margin-top: 12%;
+    margin-bottom: -20%;
+   
+    background-image: linear-gradient(35deg, rgb(241, 243, 247), rgb(120, 111, 245));
+    background-clip: text;
+}
+
+/* page 2 info */
+#p2h{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(35deg,violet, indigo, blue, orange, red);
+    color: transparent;
+    background-clip: text;
+}
+.cont{
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    margin: 2% auto;
+}
+.cont .c{
+    height: 70%;
+    width: 75%;
+    box-shadow: 0px 0px 6px 1px black;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgba(250, 235, 215, 0.642);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-weight: 500;
+    padding: 2%;
+    font-size: calc(1vh +  1vw);
+}
+/* page3 MOU */
+.nav-item {
+    padding: 50px;
+    margin: 5px;
+    border: none;
+
+}
+li{
+    background-color: black;
+}
+.nav-link {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+
+}
+
+.img-1 {
+    height: 70px;
+
+}
+
+.img-2 {
+    margin: 0px;
+    height: 85px;
+    color: aqua;
+}
+
+a:hover {
+    scale: 1.1;
+    transition: 0.4s;
+
+    filter: drop-shadow(0px 0px 10px #B8ECFF);
+}
+/* page 4 satisfaction page */
+#page4, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #page4 .s{
+        background-color: aliceblue;
+        height: 60%;
+        width: 20%;
+        border-radius: 10px;
+        margin:0 auto;
+        box-shadow: 0px 0px 10px 1px black;
+        background-image: url("sec4i1.png");
+        background-size: 100% 100%;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+
+    .s .sb{
+        width: 100%;
+        height: 0%;
+        background-color: #f8f3f282;
+        overflow: hidden;
+        font-weight: 1.4em;
+        text-align: center;
+    }
+
+    .s:hover{
+        .sb{
+            height: 100%;
+            transition: 0.6s;
+        }
+        
+    }
+
+
+    /* page 5 trusted organisations */
+    #page5 .t{
+        height: 25%;
+        width: 20%;
+        display: inline-block;
+        border: 1px solid black;
+        margin: 1vh 2%;
+        border-radius: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 5%;
+    }
+
+    #page6{
+        display: flex;
+align-items: center;
+justify-content: center;
+width: 80%;
+margin: 0 auto;
+    }
+
+    #page6 .p{
+        height: 70%;
+        width: 20%;
+        box-shadow: 0px 0px 10px 1px black;
+        margin: 0 auto;
+    }
+
+    #page6 .p:hover{
+        cursor: pointer;
+        margin-top: -3%;
+        transition: 0.6s;
+    }
+
+    /* footer desc */
+    footer{
+        width: 100vw;
+        height: 5vh;
+        padding: 2%;
+        background-color: rgb(22, 21, 21);
+        margin: 0 auto;
+        color: aliceblue;
+    }
+    footer p{
+        margin: 0 auto;
+    }
+    
