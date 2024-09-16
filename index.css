@@ -130,15 +130,15 @@ margin-top: 5%;
 }
 /* page3 MOU */
 .nav-item {
-    padding: 50px;
-    margin: 5px;
+    padding: 3.5%;
+    margin: 0.5%;
     border: none;
 
 }
 
 .nav-link {
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border: none;
 
 }
@@ -158,8 +158,12 @@ a:hover {
     scale: 1.1;
     transition: 0.4s;
 
-    filter: drop-shadow(0px 0px 10px #B8ECFF);
+    filter: drop-shadow(0px 0px 10px #B8ECFF)
 }
+
+
+   
+
 /* page 4 satisfaction page */
 #page4, footer{
     display: flex;
