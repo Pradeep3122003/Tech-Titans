@@ -236,6 +236,8 @@ a:hover {
         border: 1px solid black;
         margin: 1vh 2%;
         border-radius: 10px;
+        background-size:100% 100%;
+    background-align:center;
     }
     h1{
         text-align: center;
@@ -243,19 +245,31 @@ a:hover {
         margin-bottom: 5%;
     }
 
-.Trusted{
-    height: 100%;
-    width: 100%;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    padding-bottom: 15%;
-}
 
 #page5 #t1{
     background-image:url("iit.png");
-    background-size:100% 100%;
-    background-align:center;
-}
+    }
+#page5 #t2{
+    background-image:url("vtu.png");
+    }
+#page5 #t3{
+    background-image:url("aictce.png");
+    }
+#page5 #t4{
+    background-image:url("oxford.png");
+    }
+#page5 #t5{
+    background-image:url("mit.png");
+    }
+#page5 #t6{
+    background-image:url("unacademy.png");
+    }
+#page5 #t7{
+    background-image:url("udemy.png");
+    }
+#page5 #t8{
+    background-image:url("vit.png");
+    }
 
     #page6{
         display: flex;
