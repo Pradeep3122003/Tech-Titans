@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px 0px;
+            border: none;
+            z-index: 1;
+
+
+        }
+
+
+
+        body {
+            width: 100svw;
+            height: 300svh;
+        }
+
+        #menu {
+            height: 15vh;
+            width: 95vw;
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
+            background-color: white;
+            box-shadow: 0px 0px 6px 3px black;
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #search {
+            height: 10vh;
+            width: 60vw;
+
+            position: absolute;
+            margin: 0 20vw;
+            margin-top: 35vh;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo,
+        #pro {
+            height: calc(4vh + 4vw);
+            width: calc(4vh + 4vw);
+            border: 1px solid black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #pro {
+            height: calc(3vh + 3vw);
+            width: calc(3vh + 3vw);
+            background-image: url("profile.jpg");
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        #logo {
+            margin-right: 20%;
+            background-image: url("logo.jpg");
+            background-size: 100% 100%;
+            background-position: center;
+
+        }
+
+        .s {
+            width: 8vw;
+            height: 5vh;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 0 auto;
+            cursor: pointer;
+
+        }
+
+
+        .s a{
+            text-decoration: none;
+            color: black;
+        }
+        #search #se {
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 65%;
+            width: 75%;
+            background-color: white;
+            font-size: 1.3em;
+            padding: 1%;
+        }
+
+        #search #su {
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 70%;
+            width: 10%;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .logo {
+            height: 100%;
+        }
+
+        .s:hover {
+            scale: 1.1;
+            
+            transition: 0.8s;
+            a{
+                color: blue;
+                transition: 0.8s;
+            }
+        }
+        #scan{
+            height: 25vh;
+            width: 100vw;
+          border: 1px solid black;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+           margin-top: 30vh;
+           background: white;
+        }
+        #scan .s{
+            height: 18vh;
+            width: 10vw;
+            box-shadow: 0px 0px 5px 1px black;
+            margin: 0 4%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4em;
+            font-family: cursive;
+            background-image: linear-gradient(35deg,white 100%, rgb(140, 211, 247) );
+            cursor: pointer;
+        }
+        #scan .s:hover{
+            background-image: linear-gradient(35deg,white, rgb(140, 211, 247));
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="menu">
+        <div id="logo"></div>
+
+
+        <div class="s"><a href="#" onclick="scan()">Resume</a></div>
+
+
+
+
+        <div class="s"> <a href="linkedin.html">Linkedin</a></div>
+
+        <a class="a" href="">
+            <div class="s"> <a href="">Applications</a></div>
+
+            <a class="a" href="">
+                <div class="s"> <a href="course.html">Courses</a></div>
+
+                <div id="pro"></div>
+    </section>
+    <section id="search">
+        <input type="search" name="" id="se" placeholder="Amazon web developer">
+        <input type="submit" value="search" id="su">
+    </section>
+    <section id="scan" onmouseleave="scan()">
+
+        <div id="up" class="s" onclick="resume()">Upload <br> Resume</div>
+        <div id="man" class="s" onclick="rlink()">Create <br> Resume</div>
+    </section>
+    <script>
+        rlink=()=>{
+            window.open("https://docs.google.com/forms/d/e/1FAIpQLScG-SBOFV4B4fR3GegItgo58ksAltJv1jScWRoAg78b0H5N8Q/viewform?usp=sf_link")
+        }
+        let sc = document.getElementById("scan");
+        var a=0;
+        scan=()=>{
+           if(a === 0)
+           {
+            sc.style.display="flex";
+            a=1;
+           }
+           else{
+            sc.style.display="none";
+            a=0;
+           }
+        }
+        resume=()=>{
+            window.open("resume.html");
+        }
+    </script>
+</body>
+
+</html>

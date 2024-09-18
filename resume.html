@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px 0px;
+            border: none;
+        z-index: 1;
+        }
+        body{
+            width: 100svw;
+            height: 100svh;
+            background-image: linear-gradient(90deg,#F8F3F2,#B8ECFF);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        section{
+            height: 95%;
+            width: 95%;
+            border-radius: 20px;
+            display: grid;
+            grid-template-rows: 20% 80%;
+            grid-template-columns: 40% 60%;
+            
+        }
+        section .s{
+            box-shadow: 0px 0px 4px 1px black;
+            scale: 0.9;
+            border-radius: 10px;
+            padding: 2%;
+           
+           
+        }
+        #sug, #resume-container{
+            width: 100%;
+            height: 200%;
+        }
+        #s1, #sco, #sug .sg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #s3, #s4{
+            overflow: scroll;
+        }
+        #resume-container{
+            background-image: url("aaryanresume.png");
+            background-size: 100% 100%;
+            
+        }
+        #sco{
+            height: 80%;
+            width: 20%;
+            border-bottom: 4px solid blue;
+            border-top: 4px solid purple;
+            border-left: 4px solid purple;
+            border-right: 4px solid blue;
+            border-radius: 50%;
+            margin: 0 auto;
+            font-size: 3em;
+            font-weight: 900;
+        }
+        #com{
+            height: 80%;
+            width:70%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.4em;
+        }
+        #s2{
+            font-size: 1.4em;
+            color:blue;
+        }
+
+        #sug .sg{
+            width: 90%;
+            height: 8%;
+            margin: 3% auto;
+            padding: 1%;
+            box-shadow: 0px 0px 4px 1px black;
+        }
+        #sug .sg div{
+            margin: 0 auto;
+        }
+        #sug .sg input{
+          
+            width: 200px;
+            height: 5px;
+            background-color: var(--range-color);
+            pointer-events: none;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <section id="rresult">
+        <div id="s1" class="s">
+            <div id="sco">69%</div>
+            <div id="com">
+                <b>Almost there!</b>
+                <p> Make some changes as suggested and get a perfect resume..</p>
+               
+            </div>
+        </div>
+        <div id="s2" class="s">
+            We did our best to scan your Resume by ATS software and listed out all posiible outcomes and corrections posiible.
+            We did our best to scan your Resume by ATS software and listed out all posiible outcomes and corrections posiible.
+        </div>
+        <div id="s3" class="s">
+            <div id="sug">
+                <div class="sg">
+                    <div>
+                        <h2>Skills</h2>
+                        4 mistakes
+                    </div>
+                    <div>
+                    <input type="range" id="myRange" min="0" max="100" value="50" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>Experience</h2>
+                        Good
+                    </div>
+                    <div>
+                    <input type="range" id="my2" min="0" max="100" value="100" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>Projects</h2>
+                        1 mistakes
+                    </div>
+                    <div>
+                    <input type="range" id="my2" min="0" max="100" value="90" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>Summary</h2>
+                        7 mistakes
+                    </div>
+                    <div>
+                    <input type="range" id="my3" min="0" max="100" value="30" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>sentences</h2>
+                        3 mistakes
+                    </div>
+                    <div>
+                    <input type="range" id="my3" min="0" max="100" value="70" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>compoition</h2>
+                        1 mistakes
+                    </div>
+                    <div>
+                    <input type="range" id="my3" min="0" max="100" value="80" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>Extra Curriculum</h2>
+                        8 mistakes
+                    </div>
+                    <div>
+                    <input type="range" id="my3" min="0" max="100" value="10" style="--range-color: #ff0000;">
+                </div>
+                </div>
+                <div class="sg">
+                    <div>
+                        <h2>Education</h2>
+                        Good
+                    </div>
+                    <div>
+                    <input type="range" id="my3" min="0" max="100" value="100" style="--range-color: #ff0000;">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="s4" class="s">
+            <div id="resume-container"></div>
+        </div>
+    </section>
+
+    <script>
+        const myRange = document.getElementById('myRange');
+myRange.value = 50;
+myRange.style.pointerEvents = 'none';
+    </script>
+</body>
+</html>
